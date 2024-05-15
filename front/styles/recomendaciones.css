@@ -1,0 +1,84 @@
+article p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0e2431;
+    padding-bottom: 20px;
+}
+
+.seccionCines, .seccionApps, .seccionRecomendaciones {
+    cursor: pointer;
+    border: 1px solid #0e2431;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+  
+/* Ocultar las opciones por defecto */
+.opcionesCines, .opcionesApps {
+    display: none;
+}
+  
+/* Mostrar las opciones cuando la sección está activa */
+.seccionCines.activo .opcionesCines,
+.seccionApps.activo .opcionesApps,
+.seccionRecomendaciones.activo{
+    display: block;
+}
+
+  /* Estilos para el contenido dentro de la sección de cines */
+  .seccionCines.activo .opcionesCines {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para el contenido dentro de la sección de aplicaciones de streaming */
+  .seccionApps.activo .opcionesApps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+    /* Estilos para las tarjetas de cines y aplicaciones */
+    .tarjeta {
+      width: 30%; /* Ancho de cada tarjeta */
+      margin-bottom: 20px; /* Espacio entre las tarjetas */
+      box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      align-items: center;
+      display: flex; /* Agregamos display:flex para usar flexbox */
+      flex-direction: column; /* Establecemos la dirección de los elementos secundarios como columna */
+    }
+    
+    .tarjeta img {
+      width: 100%;
+      max-width: 200px; /* Tamaño máximo para la imagen */
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .tarjeta h3 {
+      font-size: 1rem; /* Tamaño de fuente */
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    
+    .tarjeta p {
+      font-size: 0.8rem; /* Tamaño de fuente */
+      text-align: center;
+    }
+
+      .apps {
+        /*se agranda la imagen cuando paso el mouse*/
+        overflow: hidden;
+        transition:0.8s ease;
+    }
+  
+ .apps:hover{
+    transform: scale(1.04);
+ }
+ 
+

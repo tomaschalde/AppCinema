@@ -1,0 +1,89 @@
+
+/*---------------------------------------------------------------------------------------------------*/
+main{
+    flex: 1; /* El contenido principal (main) ocupará todo el espacio disponible */
+    
+}
+/* Estilos para el título "Peliculas recomendadas del mes" */
+article h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #0e2431;
+    padding-bottom: 20px;
+    transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
+    opacity: 1; /* Opacidad inicial */
+}
+
+/* Estilos para el contenedor de tarjetas */
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px; /* Agregamos margen negativo para compensar el padding de las tarjetas */
+    margin-right: 30px; /* Agregamos margen negativo para compensar el padding de las tarjetas */
+
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    width: calc(33.33% - 20px); /* Ancho aproximado de un tercio del contenedor */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+    padding: 10px;
+    border: 1px solid #0e2431;
+    border-radius: 5px;
+
+    display: flex; /* Agregamos display:flex para usar flexbox */
+    flex-direction:column; /* Establecemos la dirección de los elementos secundarios como columna */
+    align-items: center; /* Centramos los elementos secundarios horizontalmente */  
+
+    /*se agranda la imagen cuando paso el mouse*/
+    overflow: hidden;
+    transition:0.8s ease;
+}
+
+.card:hover{
+    /*cuando paso el mouse se agranda ese tamaño*/
+    transform: scale(1.04);
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+/*Footer*/
+footer {
+  background-color: #0e2431;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 5px 0;
+}
+

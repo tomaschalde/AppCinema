@@ -16,63 +16,63 @@ article p {
     
   }
   
-/* Ocultar las opciones por defecto */
+
 .opcionesCines, .opcionesApps {
     display: none;
 }
   
-/* Mostrar las opciones cuando la sección está activa */
+
 .seccionCines.activo .opcionesCines,
 .seccionApps.activo .opcionesApps,
 .seccionRecomendaciones.activo{
     display: block;
 }
 
-  /* Estilos para el contenido dentro de la sección de cines */
+
   .seccionCines.activo .opcionesCines {
     display: flex;
     justify-content: space-between;
   }
   
-  /* Estilos para el contenido dentro de la sección de aplicaciones de streaming */
+
   .seccionApps.activo .opcionesApps {
     display: flex;
     justify-content: space-between;
   }
 
-    /* Estilos para las tarjetas de cines y aplicaciones */
+
     .tarjeta {
-      width: 30%; /* Ancho de cada tarjeta */
-      margin-bottom: 20px; /* Espacio entre las tarjetas */
-      box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+      width: 30%; 
+      margin-bottom: 20px; 
+      box-sizing: border-box; 
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
       align-items: center;
-      display: flex; /* Agregamos display:flex para usar flexbox */
-      flex-direction: column; /* Establecemos la dirección de los elementos secundarios como columna */
+      display: flex; 
+      flex-direction: column; 
     }
     
     .tarjeta img {
       width: 100%;
-      max-width: 200px; /* Tamaño máximo para la imagen */
+      max-width: 200px;
       border-radius: 5px;
       margin-bottom: 10px;
     }
     
     .tarjeta h3 {
-      font-size: 1rem; /* Tamaño de fuente */
+      font-size: 1rem; 
       margin-bottom: 5px;
       text-align: center;
     }
     
     .tarjeta p {
-      font-size: 0.8rem; /* Tamaño de fuente */
+      font-size: 0.8rem; 
       text-align: center;
     }
 
       .apps {
-        /*se agranda la imagen cuando paso el mouse*/
+
         overflow: hidden;
         transition:0.8s ease;
     }

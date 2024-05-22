@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 
 
 main {
@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 
-/* Estilos para las listas */
+
 ul{
     list-style-type: disc;
     padding-left: 20px;
@@ -27,7 +27,7 @@ ul{
 }
 
 
-/* Estilos para los párrafos */
+
 p {
     line-height: 1.5;
 }

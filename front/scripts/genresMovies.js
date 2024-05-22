@@ -2,7 +2,7 @@ const genres = ["Action","Fantasy","Comedy","Drama","Sci-Fi","Terror","Adventure
 const options = document.getElementById('options');
 
 function renderGenres(){
-    options.innerHTML = ''; //Limpio el div
+    options.innerHTML = ''; 
 
     for (const genre of genres) {
         const div = document.createElement('div')

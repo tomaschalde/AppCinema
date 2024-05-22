@@ -1,4 +1,4 @@
-const {Schema, model} = require('mongoose'); //Con destructuring agarramos la clase Schema y el metodo model
+const {Schema, model} = require('mongoose');
 
 const movieSchema = new Schema({
 

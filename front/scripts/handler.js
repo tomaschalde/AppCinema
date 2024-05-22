@@ -1,7 +1,7 @@
 //Obtengo las peliculas desde la API y las convierto en tarjeta
 const renderPeliculas = require('./renderFilms');
 
-//Requiero libreria axios
+
 const axios = require('axios');
 
 

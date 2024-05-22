@@ -6,7 +6,7 @@ const btnSubmit = document.getElementById('btnSubmit');
 const btnCleaner = document.getElementById('btnCleaner');
 
 
-//Funcionalidades
+
 renderGenres();
 btnSubmit.addEventListener('click', handlerSubmit);
 btnCleaner.addEventListener('click', cleanInputs);
